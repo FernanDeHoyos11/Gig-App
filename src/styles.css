@@ -4,7 +4,7 @@
   }
   
   body {
-    padding: 60px;
+    padding: 30px;
   }
   
   input {
@@ -14,7 +14,7 @@
     color: black;
     font-size: 1.2rem;
     outline: none;
-    padding: 10px 15px;
+    padding: 10px 10px;
     width: 100%;
   }
   
@@ -32,6 +32,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 10px;
   }
   
   .card {
@@ -44,8 +45,8 @@
     flex-direction: column;
     height: 0%;  
     justify-content: center;
-    margin-bottom: 20px;
-    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-right: 10px;
     overflow: hidden;
   }
   
