@@ -9,7 +9,7 @@ const whatsappLink = `https://wa.me/?text=${encodedShareText}%0A%0A${encodedGifU
 window.open(whatsappLink, '_blank');
 };
 
-export const handleShare1 = (url) => {
+export const handleShare1 = (url, title) => {
     const gifUrl = url; // Reemplaza con la URL del GIF
   
     const shareText = `¡Mira este GIF: ${title}!`;

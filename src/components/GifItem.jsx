@@ -9,7 +9,7 @@ const handleDownload = () => {
   };
     
 const Share = () => {
-    handleShare1(url)
+    handleShare1(url, title)
 }
     
 
