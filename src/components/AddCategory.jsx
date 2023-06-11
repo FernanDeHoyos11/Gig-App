@@ -3,7 +3,7 @@ import { useState } from "react";
 export const AddCategory = ({onNewCategory}) => {
 
 const [inputValue, setInputValue] = useState('SNK');
-   
+
 const onChange = (event) => {
      setInputValue(event.target.value)
      

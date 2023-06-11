@@ -62,3 +62,11 @@
   .card img {
     width: 100%;
   }
+
+  .buttom-delete{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(97, 32, 158);
+    background-color: lightslategrey;
+  }
