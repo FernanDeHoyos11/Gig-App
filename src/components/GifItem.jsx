@@ -1,5 +1,5 @@
 import { downloadGif } from "../helpers/download";
-import { handleShare } from "../helpers/handleShare";
+import { handleShare1 } from "../helpers/handleShare";
 
 
 
@@ -9,7 +9,7 @@ const handleDownload = () => {
   };
     
 const Share = () => {
-    handleShare(url)
+    handleShare1(url)
 }
     
 
