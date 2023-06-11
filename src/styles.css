@@ -65,6 +65,7 @@
   }
 
   .buttom-delete{
+    cursor: pointer;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -75,10 +76,17 @@
   .div-share{
     background-color: rgb(255, 255, 255); ;
   }
-  .btn-share{
+  .btn-share, .btn-down{
+    cursor: pointer;
     padding: 0.5rem;
     margin: 0.3rem;
     border-radius: 10px;
     border: 1px solid rgb(97, 32, 158);
     background-color: lightslategrey;
+  }
+  .btn-share:hover{
+    background-color: rgb(65, 234, 65);
+  }
+  .btn-down:hover{
+    background-color: cyan;
   }

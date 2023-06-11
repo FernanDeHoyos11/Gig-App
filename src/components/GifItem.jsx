@@ -1,5 +1,5 @@
 import { downloadGif } from "../helpers/download";
-import { handleShare1 } from "../helpers/handleShare";
+import { handleShare } from "../helpers/handleShare";
 
 
 
@@ -9,7 +9,7 @@ const handleDownload = () => {
   };
     
 const Share = () => {
-    handleShare1(url, title)
+    handleShare(url, title)
 }
     
 
@@ -19,7 +19,7 @@ const Share = () => {
             <img src={url} alt={title} />
             <div className="div-share">
                 <button className="btn-share" onClick={Share}>Compartir</button>
-                <button className="btn-share" onClick={handleDownload}>Descargar</button>
+                <button className="btn-down" onClick={handleDownload}>Descargar</button>
             </div>
         </div>
     )
