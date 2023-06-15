@@ -1,10 +1,11 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(234, 234, 234);
+    background-color: #21232A;
   }
   
   body {
     padding: 30px;
+    
   }
   
   input {
@@ -20,9 +21,11 @@
   
   h2 {
     font-size: 1.5rem;
+    color: aliceblue;
   }
   
   h3 {
+    color: aliceblue;
     font-size: 3rem;
     margin-bottom: 5px;
   }
@@ -38,7 +41,7 @@
   .card {
     align-content: center;
     align-items: center;
-    background-color: white;
+    background-color: rgb(220, 220, 220);
     border-radius: 10px;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
     display: flex;
@@ -52,7 +55,7 @@
   }
   
   .card p {
-    background-color: white;
+    background-color: rgb(220, 220, 220);
     flex: 1;
     font-size: 1rem;
     margin-top: 0.3rem;
@@ -74,7 +77,7 @@
   }
   
   .div-share{
-    background-color: rgb(255, 255, 255); ;
+    background-color: rgb(220, 220, 220);
   }
   .btn-share, .btn-down{
     cursor: pointer;
@@ -89,4 +92,13 @@
   }
   .btn-down:hover{
     background-color: cyan;
+  }
+
+  .btnShowMore{
+    cursor: pointer;
+    padding: 0.5rem;
+    margin: 0.3rem;
+    border-radius: 10px;
+    border: 1px solid rgb(97, 32, 158);
+    background-color: lightslategrey;
   }

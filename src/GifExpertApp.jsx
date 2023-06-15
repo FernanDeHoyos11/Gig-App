@@ -6,12 +6,10 @@ export const GifExpertApp = () => {
 
   const [categories, setCategories] = useState(['SNK']);
 
-
   const onAddCategory = (newCategory) => {
 
     if(categories.includes(newCategory)) return;
 
-        console.log(newCategory);
         setCategories([newCategory, ...categories])
        
   }
@@ -22,12 +20,12 @@ export const GifExpertApp = () => {
   
   return (
         <>
-          <h1>GifExpertApp</h1>
+          <h2>GifExpertApp</h2>
           
           <AddCategory onNewCategory={event => onAddCategory(event)}/>
 
           <button className="buttom-delete" onClick={onClearGif}>Borrar</button> 
-
+          
             {categories.map(category => {
               return (
                   <GifGrid 

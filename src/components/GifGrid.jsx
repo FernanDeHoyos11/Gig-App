@@ -1,12 +1,17 @@
 
 import { GifItem } from "./GifItem";
 import { useFetchGif } from "../hooks/useFetchGif";
+import { useState } from "react";
 
 
 export const GifGrid = ({category}) => {
   
   const {images, isLoading} = useFetchGif(category);
+  const [limit, setLimit] = useState(10);
 
+  const moreGif = () => {
+    setLimit(preLimit => preLimit +5);
+  }
 
     return (
         <>
@@ -15,7 +20,7 @@ export const GifGrid = ({category}) => {
           { isLoading ? (<h2>Cargando...</h2>) : null }
 
           <div className="card-grid">{
-              images.map( (image) => (
+              images.slice(0, limit).map( (image) => (
                 <GifItem
                    key={ image.id}
                    title={image.title}
@@ -23,7 +28,13 @@ export const GifGrid = ({category}) => {
                    // o {...image} para las props 
                 />
                 ))
-              }</div>
+                
+              }
+              
+              </div>
+              {images.length > limit && (
+              <button className="btnShowMore" onClick={moreGif}>Ver más</button>
+      )}
         </>
     );
 }
