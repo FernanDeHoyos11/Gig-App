@@ -1,3 +1,4 @@
+import PropTypes  from "prop-types";
 import { downloadGif } from "../helpers/download";
 import { handleShare } from "../helpers/handleShare";
 
@@ -23,4 +24,9 @@ const Share = () => {
             </div>
         </div>
     )
+}
+
+GifItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
 }
